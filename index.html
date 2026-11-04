@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahesh Sathe – Talk to Mahesh</title>
+<meta name="description" content="Counselling psychology intern and social media strategist. Human connection for people. Strategic storytelling for brands.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070B18;--glass:rgba(255,255,255,.055);--glass-b:rgba(255,255,255,.13);--ink:#EEF2FF;--muted:#98A3C0;
+  --v:#9B8CFF;--v2:#6F5CF0;--v-ink:#0B0720;--p:#FFB89A;--p-ink:#2A1208;--aur:.55;
+  --display:"Poppins","Helvetica Neue",Arial,sans-serif;--body:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#F3F4FB;--glass:rgba(255,255,255,.72);--glass-b:rgba(30,30,90,.13);--ink:#14172B;--muted:#59607C;--v:#5B46D6;--v2:#7A66F5;--v-ink:#fff;--aur:.28;color-scheme:light}}
+:root[data-theme="light"]{--bg:#F3F4FB;--glass:rgba(255,255,255,.72);--glass-b:rgba(30,30,90,.13);--ink:#14172B;--muted:#59607C;--v:#5B46D6;--v2:#7A66F5;--v-ink:#fff;--aur:.28;color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.1rem/1.65 var(--body);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:20}
+.aurora{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:var(--aur);
+  background:radial-gradient(40% 35% at 15% 8%,var(--v2),transparent 70%),radial-gradient(35% 30% at 90% 20%,var(--p),transparent 70%),radial-gradient(45% 35% at 60% 100%,var(--v2),transparent 70%);filter:blur(60px)}
+.gridbg{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;background-image:linear-gradient(var(--glass-b) 1px,transparent 1px),linear-gradient(90deg,var(--glass-b) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(70% 55% at 50% 0%,#000,transparent);mask-image:radial-gradient(70% 55% at 50% 0%,#000,transparent)}
+a{color:inherit}:focus-visible{outline:3px solid var(--v);outline-offset:3px;border-radius:8px}
+[hidden]{display:none!important}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;margin:0 0 .6em;letter-spacing:-.02em}
+h1{font-size:clamp(2.1rem,5vw,3.6rem)}h2{font-size:clamp(1.5rem,3vw,2.2rem)}h3{font-size:1.1rem;letter-spacing:0}
+p{margin:0 0 1em;max-width:62ch}.muted{color:var(--muted)}
+section{margin-bottom:84px}
+.glass{background:var(--glass);border:1px solid var(--glass-b);border-radius:28px;-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+/* nav */
+header{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);z-index:30;margin:12px 0 40px;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 10px 8px 22px;border-radius:99px;background:var(--glass);border:1px solid var(--glass-b);-webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px)}
+.logo{font:600 1.05rem var(--display);text-decoration:none}
+nav{display:flex;gap:2px;align-items:center;font:500 .92rem var(--body)}
+nav a{text-decoration:none;color:var(--muted);padding:8px 13px;border-radius:99px}
+nav a:hover{color:var(--ink)}nav a[aria-current="page"]{background:var(--glass-b);color:var(--ink)}
+nav a.talk{background:linear-gradient(135deg,var(--v),var(--v2));color:var(--v-ink);font-weight:600;margin-left:6px}
+#menu{display:none;font:600 .9rem var(--body);background:var(--glass-b);color:var(--ink);border:0;border-radius:99px;padding:10px 18px;cursor:pointer}
+/* buttons */
+.btn{display:inline-block;font:600 .98rem var(--body);text-decoration:none;border-radius:99px;padding:14px 28px;background:linear-gradient(135deg,var(--v),var(--v2));color:var(--v-ink);border:1px solid transparent;cursor:pointer;box-shadow:0 10px 40px -12px var(--v2);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:linear-gradient(135deg,var(--p),#FF8F7A);color:var(--p-ink);box-shadow:0 10px 40px -12px #FF8F7A}
+.btn.ghost{background:var(--glass);color:var(--ink);border-color:var(--glass-b);box-shadow:none}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.chips{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font:500 .9rem var(--body);border:1px solid var(--glass-b);background:var(--glass);border-radius:99px;padding:6px 14px}
+/* hero */
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center}
+.chat{display:flex;flex-direction:column;gap:12px}
+.bubble{width:fit-content;max-width:100%;opacity:0;transform:translateY(14px);animation:in .7s cubic-bezier(.2,.8,.2,1) forwards}
+.b1{background:var(--glass);border:1px solid var(--glass-b);color:var(--muted);font:500 1rem var(--body);padding:12px 22px;border-radius:24px 24px 24px 6px;animation-delay:.2s}
+.b2{margin:0;background:linear-gradient(135deg,var(--v),var(--v2));color:var(--v-ink);font:600 clamp(2.3rem,6vw,4.4rem)/1.05 var(--display);letter-spacing:-.03em;padding:26px 36px;border-radius:36px 36px 6px 36px;align-self:flex-end;box-shadow:0 30px 90px -20px var(--v2);animation-delay:1s}
+.b3{background:var(--glass);border:1px solid var(--glass-b);display:flex;gap:6px;padding:15px 20px;border-radius:24px 24px 24px 6px;animation-delay:1.8s}
+.b3 i{width:8px;height:8px;border-radius:50%;background:var(--p);animation:dot 1.2s infinite}.b3 i:nth-child(2){animation-delay:.2s}.b3 i:nth-child(3){animation-delay:.4s}
+@keyframes in{to{opacity:1;transform:none}}@keyframes dot{0%,60%,100%{opacity:.25}30%{opacity:1}}
+.lede{font-size:1.25rem;line-height:1.55;margin:34px 0 22px;max-width:40ch;color:var(--muted)}.lede b{color:var(--ink);font-weight:600}
+.ring{padding:3px;border-radius:220px 220px 40px 40px;background:conic-gradient(from 200deg,var(--v),var(--p),var(--v2),var(--v));box-shadow:0 30px 100px -30px var(--v2)}
+.photo{aspect-ratio:4/5;border-radius:217px 217px 37px 37px;background:var(--bg);display:grid;place-items:center;overflow:hidden;text-align:center;padding:20px;color:var(--muted);font:500 .95rem var(--body)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo b{display:block;font:600 3.4rem var(--display);letter-spacing:-.03em;background:linear-gradient(135deg,var(--v),var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+/* media: yt + linkedin left, reel right */
+.media{display:grid;grid-template-columns:1.6fr 1fr;grid-template-rows:auto 1fr;gap:20px}
+.m{margin:0;display:flex;flex-direction:column}.m.reel{grid-column:2;grid-row:1/3}
+.cap{font:500 .9rem var(--body);color:var(--muted);margin:10px 6px 0}
+.frame{position:relative;border-radius:24px;overflow:hidden;background:var(--glass);border:1px dashed var(--glass-b);display:grid;place-items:center;text-align:center;color:var(--muted);font:500 .95rem var(--body);padding:16px}
+.frame.h{aspect-ratio:16/9}.frame.li{flex:1;min-height:380px}.frame.v{flex:1;min-height:480px}
+.frame.live{border:1px solid var(--glass-b);padding:0}.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.s3 .frame.v{aspect-ratio:9/16;min-height:0;max-height:560px}.s3 .frame.li{min-height:420px}
+/* panels */
+.panel{border-radius:32px;padding:42px 36px;position:relative;overflow:hidden}
+.p1{background:linear-gradient(150deg,var(--v2),#3A2C9E);color:#fff}
+.p2{background:linear-gradient(150deg,var(--p),#FF8F7A);color:var(--p-ink)}
+.p1 .btn{background:#fff;color:#2A1E7A;box-shadow:none}.p2 .btn{background:var(--p-ink);color:#FFD9C8;box-shadow:none}
+.card{padding:28px;border-radius:26px;background:var(--glass);border:1px solid var(--glass-b);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.card .tag{font:500 .85rem var(--body);color:var(--p);display:block;margin-bottom:8px}
+.todo{font:500 .8rem var(--body);color:var(--muted);border:1px dashed var(--glass-b);border-radius:99px;padding:3px 12px;display:inline-block;margin-bottom:12px}
+.q{font-size:1.15rem}.read{font-family:"Source Serif 4",Georgia,serif;font-size:1.2rem;line-height:1.75}
+details{margin-bottom:10px;padding:18px 24px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-b)}
+summary{font:600 1rem var(--body);cursor:pointer}details p{margin:12px 0 0}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.steps li{counter-increment:s;padding:28px;border-radius:26px;background:var(--glass);border:1px solid var(--glass-b)}
+.steps li::before{content:counter(s);font:600 2rem var(--display);display:block;margin-bottom:6px;background:linear-gradient(135deg,var(--v),var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+.pagehead{padding:24px 0 48px}.pagehead p{font-size:1.2rem;color:var(--muted)}
+.note{font-size:.95rem;color:var(--muted)}
+.cta{padding:48px 36px;border-radius:36px;margin-bottom:48px;background:linear-gradient(135deg,rgba(111,92,240,.35),rgba(255,184,154,.2)),var(--glass);border:1px solid var(--glass-b)}
+form{display:grid;gap:16px;max-width:620px}
+label{font:500 .95rem var(--body);display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:14px 16px;border-radius:16px;border:1px solid var(--glass-b);background:var(--glass);color:var(--ink);width:100%}
+select option{color:#14172B}textarea{min-height:140px}
+footer{padding:16px 0 44px;font-size:.95rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between}footer a{margin-left:16px}
+@media (max-width:860px){
+  #menu{display:block}nav{display:none;position:absolute;left:0;right:0;top:calc(100% + 10px);flex-direction:column;align-items:stretch;padding:12px;border-radius:28px;background:var(--bg);border:1px solid var(--glass-b)}
+  nav.open{display:flex}nav a.talk{margin:6px 0 0;text-align:center}
+  .hero,.grid2,.grid3,.steps{grid-template-columns:1fr}.hero{gap:36px}.ring{max-width:340px}
+  .media{grid-template-columns:1fr;grid-template-rows:none}.m.reel{grid-column:auto;grid-row:auto}.m.reel .frame.v{aspect-ratio:9/16;max-height:600px;min-height:0;flex:none}
+  .panel,.cta{padding:30px 22px}section{margin-bottom:60px}
+}
+@media (prefers-reduced-motion:reduce){.bubble{animation:none;opacity:1;transform:none}.b3 i{animation:none;opacity:.6}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="aurora"></div><div class="gridbg"></div>
+<div class="wrap">
+<header>
+  <a class="logo" href="#home">Mahesh Sathe</a>
+  <button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home" data-v="home">Home</a>
+    <a href="#counselling" data-v="counselling">Counselling</a>
+    <a href="#digital" data-v="digital">Digital presence</a>
+    <a href="#social" data-v="social">Social</a>
+    <a href="#blog" data-v="blog">Blog</a>
+    <a href="#talk" data-v="talk">Talk to Mahesh</a>
+    <a class="talk" href="#contact" data-v="contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<div class="view" id="v-home">
+  <section class="hero">
+    <div>
+      <div class="chat">
+        <div class="bubble b1">Hi, I’m Mahesh.</div>
+        <h1 class="bubble b2">Talk to Mahesh</h1>
+        <div class="bubble b3" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <p class="lede">Counselling psychology intern, professional listener and <b>social media strategist</b>. Human connection for people. Strategic storytelling for brands.</p>
+      <div class="row">
+        <a class="btn" href="#contact" data-topic="Counselling conversation">Talk to Mahesh</a>
+        <a class="btn alt" href="#contact" data-topic="Social media and branding">Grow your brand</a>
+      </div>
+    </div>
+    <div class="ring"><div class="photo" id="photo"></div></div>
+  </section>
+
+  <section style="margin-top:84px">
+    <h2>Watch, scroll, read</h2>
+    <div class="media">
+      <figure class="m" id="m-main"></figure>
+      <figure class="m li" id="m-li"></figure>
+      <figure class="m reel" id="m-reel"></figure>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <article class="panel p1">
+      <h2>For people</h2>
+      <p>A calm, judgement-free space to talk, process what you are going through and understand yourself better. I work with young adults on relationships, self-esteem, identity, family and life transitions.</p>
+      <a class="btn" href="#counselling">Counselling</a>
+    </article>
+    <article class="panel p2">
+      <h2>For brands</h2>
+      <p>Social media strategy, personal branding and storytelling for experts, founders, psychologists and purpose-driven organisations whose digital presence should match their expertise.</p>
+      <a class="btn" href="#digital">Digital presence</a>
+    </article>
+  </section>
+
+  <section>
+    <h2>I understand people. I understand stories. I understand digital presence.</h2>
+    <p class="muted">My psychology background ties them together. Content should make someone stop scrolling, recognise themselves, trust the person behind it and take action.</p>
+  </section>
+
+  <section>
+    <h2>Kind words</h2>
+    <div class="grid3" id="testimonials"></div>
+  </section>
+</div>
+
+<div class="view" id="v-counselling" hidden>
+  <div class="pagehead"><h1>Counselling</h1><p>Sometimes you don’t need a lecture or an instant solution. You need someone who says: “Go on. I’m listening.”</p>
+  <div class="row"><a class="btn" href="#contact" data-topic="Counselling conversation">Start a conversation</a></div></div>
+  <section class="grid2">
+    <div class="card"><h3>What we talk about</h3><ul class="chips"><li>Relationships</li><li>Self-esteem</li><li>Identity</li><li>Family experiences</li><li>Emotional struggles</li><li>Life transitions</li><li>Modern-life pressure</li></ul></div>
+    <div class="card"><h3>Who it’s for</h3><p class="muted">Young adults who want a safe, human space to talk, understand themselves better and feel heard. My approach is built on conversation, self-awareness, emotional wellbeing and connection.</p></div>
+  </section>
+  <section><h2>How it works</h2>
+    <ol class="steps"><li><h3>Reach out</h3><p class="muted">Send a short message using the contact page. Share only what you’re comfortable with.</p></li><li><h3>A first conversation</h3><p class="muted">We talk about what’s on your mind and what you’d like from the space.</p></li><li><h3>We go at your pace</h3><p class="muted">You lead. I listen, reflect and help you make sense of it.</p></li></ol></section>
+  <section><h2>Questions</h2>
+    <details><summary>Is this therapy?</summary><p class="muted">I’m a Counselling Psychology Intern and professional listener. This is a supportive, judgement-free conversation, not a replacement for clinical treatment or emergency care.</p></details>
+    <details><summary>Is it confidential?</summary><p class="muted">Add your confidentiality and its limits here so people know exactly what to expect.</p></details>
+    <details><summary>What if I’m in crisis?</summary><p class="muted">Please contact local emergency services or a helpline such as Tele-MANAS (14416) in India.</p></details>
+    <details><summary>How do sessions happen and what do they cost?</summary><p class="muted">Add your format (online or in person), duration and fees here.</p></details>
+  </section>
+</div>
+
+<div class="view" id="v-digital" hidden>
+  <div class="pagehead"><h1>Digital presence</h1><p>Your expertise deserves a presence that reflects it. I turn what you know into content people trust and act on.</p>
+  <div class="row"><a class="btn alt" href="#contact" data-topic="Social media and branding">Build your presence</a></div></div>
+  <section><h2>What I do</h2><div class="grid3" id="services"></div></section>
+  <section><h2>Who I work with</h2><p class="muted">Professionals, founders, psychologists, mental-health practitioners and purpose-driven organisations. Psychology-led communication is my edge: I know what makes people feel understood.</p></section>
+  <section><h2>Social media manager portfolio</h2>
+    <p class="muted">Selected work. Each project shows the problem, what I did and what changed.</p>
+    <div class="grid3" id="portfolio"></div></section>
+  <section><h2>How we’ll work</h2>
+    <ol class="steps"><li><h3>Listen</h3><p class="muted">Your goals, audience and the story only you can tell.</p></li><li><h3>Plan</h3><p class="muted">Positioning, content pillars and formats that fit your voice.</p></li><li><h3>Create and grow</h3><p class="muted">Posts, reels and visuals, reviewed against what your audience responds to.</p></li></ol></section>
+</div>
+
+<div class="view" id="v-social" hidden>
+  <div class="pagehead"><h1>Social</h1><p>Videos, reels and posts in one place.</p><div class="row" id="follow"></div></div>
+  <section><h2>YouTube videos</h2><div class="grid3 s3" id="s-yt"></div></section>
+  <section><h2>Instagram reels</h2><div class="grid3 s3" id="s-ig"></div></section>
+  <section><h2>LinkedIn posts</h2><div class="grid3 s3" id="s-li"></div></section>
+</div>
+
+<div class="view" id="v-blog" hidden>
+  <div class="pagehead"><h1>Blog</h1><p>Notes on listening, emotional wellbeing and telling better stories.</p></div>
+  <section id="posts"></section>
+</div>
+
+<div class="view" id="v-talk" hidden>
+  <div class="pagehead"><h1>Talk to Mahesh</h1><p>I help people feel heard and help brands become impossible to ignore.</p></div>
+  <section class="hero">
+    <div>
+      <p>I work at the intersection of psychology, human connection, storytelling and digital branding. Two complementary spaces, one idea: people respond to what feels real.</p>
+      <p class="muted">As a Counselling Psychology Intern, I create room for people to talk, process and understand themselves. As a social media strategist, I help experts show up online in a way that earns trust.</p>
+      <p class="muted">I don’t create content to fill a calendar, and I don’t believe every hard moment needs fixing. I believe in connection.</p>
+      <div class="row"><a class="btn" href="#contact" data-topic="Counselling conversation">Talk to Mahesh</a><a class="btn ghost" href="#contact" data-topic="Social media and branding">Work with me</a></div>
+    </div>
+    <div class="ring"><div class="photo" id="photo2"></div></div>
+  </section>
+  <section><h2>Add your story</h2><p class="muted">Replace this with your background, studies, why you do this work and what a first conversation feels like. Personal pages convert best when they sound like you.</p></section>
+</div>
+
+<div class="view" id="v-contact" hidden>
+  <div class="pagehead"><h1>Contact</h1><p>Looking for a safe, human space to talk, or ready to build your digital presence? Tell me a little and I’ll reply.</p></div>
+  <section class="grid2">
+    <form id="form">
+      <label>Your name<input id="f-name" required autocomplete="name"></label>
+      <label>Your email<input id="f-email" type="email" required autocomplete="email"></label>
+      <label>I’m reaching out about
+        <select id="f-topic"><option>Counselling conversation</option><option>Social media and branding</option><option>Collaboration</option><option>Something else</option></select></label>
+      <label>Message<textarea id="f-msg" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p class="note">This opens your email app with the message ready to send.</p>
+    </form>
+    <div>
+      <div class="card"><h3>Email</h3><p><a href="mailto:k.sathemahesh1114@gmail.com">k.sathemahesh1114@gmail.com</a></p><div id="c-extra"></div></div>
+      <p class="note" style="margin-top:20px">Counselling is offered by a psychology intern and is not emergency care. In a crisis, contact local emergency services or Tele-MANAS (14416) in India.</p>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer><span>© Mahesh Sathe · India</span><span id="f-links"></span></footer>
+</div>
+
+<script>
+/* ===== EDIT THIS: your content ===== */
+const CONFIG = {
+  photo: "",                       // a data: image URI of your photo
+  youtubeMain: "",                 // YouTube video ID, e.g. "dQw4w9WgXcQ"
+  linkedinMain: "",                // LinkedIn post embed ID, e.g. "urn:li:share:123456"
+  reelMain: "",                    // Instagram reel ID from instagram.com/reel/XXXX/
+  youtubeVideos: [],               // up to 3 YouTube IDs
+  reels: [],                       // up to 3 Instagram reel IDs
+  linkedinPosts: [],               // up to 3 LinkedIn embed IDs
+  links: { youtube:"", instagram:"", linkedin:"", whatsapp:"", booking:"" },
+  testimonials: [],                // [{quote:"", name:"", role:""}]
+  portfolio: [],                   // [{client:"", challenge:"", work:"", result:""}]
+};
+const SERVICES = [
+  ["Social media strategy","Positioning, content pillars and a plan built around your audience, not a calendar."],
+  ["Personal branding","Turn your expertise and story into a presence people recognise and trust."],
+  ["Content and LinkedIn","Posts that earn attention for professionals, founders and practitioners."],
+  ["Reels and short-form video","Scripts, direction and edits that make people stop scrolling."],
+  ["Visual storytelling and creative direction","A consistent look and voice across every platform."],
+  ["Brand positioning","Clear messaging that says who you help and why you."]
+];
+const POSTS = [
+  ["Counselling","Listening is a skill, not a default","Most of us listen to reply. Real listening means staying with someone’s words without rushing to fix them. It’s often the first thing that helps."],
+  ["Branding","Your expertise isn’t the problem, your content is","Experts often know more than their feed shows. The gap is rarely knowledge. It’s translation: turning what you know into stories your audience recognises themselves in."],
+  ["Branding","Why psychology makes better content","People share and follow what makes them feel understood. Psychology-led storytelling starts with the reader’s experience, not your service list."]
+];
+/* ===== end edit ===== */
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const embedSrc={
+  yt:id=>"https://www.youtube-nocookie.com/embed/"+encodeURIComponent(id),
+  ig:id=>"https://www.instagram.com/reel/"+encodeURIComponent(id)+"/embed",
+  li:id=>"https://www.linkedin.com/embed/feed/update/"+encodeURIComponent(id)
+};
+function frame(kind,id,cls,hint){
+  if(!id)return '<div class="frame '+cls+'"><span>'+hint+'</span></div>';
+  return '<div class="frame live '+cls+'"><iframe src="'+embedSrc[kind](id)+'" loading="lazy" title="'+hint+'" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>';
+}
+const fig=(kind,id,cls,hint,cap)=>frame(kind,id,cls,hint)+'<figcaption class="cap">'+cap+'</figcaption>';
+function photo(el){el.innerHTML=CONFIG.photo?'<img src="'+CONFIG.photo+'" alt="Mahesh Sathe">':'<div><b>MS</b>Your photo goes here</div>'}
+photo($("photo"));photo($("photo2"));
+$("m-main").innerHTML=fig("yt",CONFIG.youtubeMain,"h","Your horizontal YouTube video goes here","Featured video");
+$("m-li").innerHTML=fig("li",CONFIG.linkedinMain,"li","Your LinkedIn post goes here","Featured LinkedIn post");
+$("m-reel").innerHTML=fig("ig",CONFIG.reelMain,"v","Your vertical reel goes here","Featured reel");
+const slots=(kind,arr,cls,hint)=>[0,1,2].map(i=>frame(kind,arr[i],cls,hint)).join("");
+$("s-yt").innerHTML=slots("yt",CONFIG.youtubeVideos,"h","YouTube video");
+$("s-ig").innerHTML=slots("ig",CONFIG.reels,"v","Instagram reel");
+$("s-li").innerHTML=slots("li",CONFIG.linkedinPosts,"li","LinkedIn post");
+$("services").innerHTML=SERVICES.map(s=>'<div class="card"><h3>'+s[0]+'</h3><p class="muted">'+s[1]+'</p></div>').join("");
+const T=CONFIG.testimonials.length?CONFIG.testimonials:[{},{},{}];
+$("testimonials").innerHTML=T.map(t=>t.quote?'<div class="card"><p class="q">“'+esc(t.quote)+'”</p><p class="muted">'+esc(t.name||"")+(t.role?", "+esc(t.role):"")+'</p></div>':'<div class="card"><span class="todo">Add a real client quote</span><p class="q muted">A short line about what it was like to work with you or talk to you.</p></div>').join("");
+const P=CONFIG.portfolio.length?CONFIG.portfolio:[{},{},{}];
+$("portfolio").innerHTML=P.map(p=>p.client?'<div class="card"><span class="tag">'+esc(p.client)+'</span><h3>'+esc(p.challenge)+'</h3><p>'+esc(p.work)+'</p><p class="muted"><b>Result:</b> '+esc(p.result)+'</p></div>':'<div class="card"><span class="todo">Add your project</span><span class="tag">Client or brand</span><h3>The challenge</h3><p class="muted">What I did: strategy, content and formats.</p><p class="muted"><b>Result:</b> reach, followers, enquiries.</p></div>').join("");
+$("posts").innerHTML=POSTS.map(p=>'<details><summary>'+p[1]+'</summary><p class="muted" style="font-size:.9rem">'+p[0]+'</p><p class="read">'+p[2]+'</p></details>').join("");
+const L=CONFIG.links,names={youtube:"YouTube",instagram:"Instagram",linkedin:"LinkedIn"};
+const have=Object.keys(names).filter(k=>L[k]);
+$("follow").innerHTML=have.map(k=>'<a class="btn ghost" href="'+L[k]+'" target="_blank" rel="noopener">'+names[k]+'</a>').join("")||'<span class="todo">Add your YouTube, Instagram and LinkedIn links in CONFIG</span>';
+$("f-links").innerHTML=have.map(k=>'<a href="'+L[k]+'" target="_blank" rel="noopener">'+names[k]+'</a>').join("");
+$("c-extra").innerHTML=(L.whatsapp?'<p><a href="'+L.whatsapp+'">Message on WhatsApp</a></p>':"")+(L.booking?'<p><a href="'+L.booking+'" target="_blank" rel="noopener">Book a time</a></p>':"");
+
+const CTA='<section class="cta"><h2>Let’s talk</h2><p class="muted">Want to feel heard, or ready to build a digital presence that reflects your expertise?</p><div class="row"><a class="btn" href="#contact" data-topic="Counselling conversation">Talk to Mahesh</a><a class="btn alt" href="#contact" data-topic="Social media and branding">Grow your brand</a><a class="btn ghost" href="mailto:k.sathemahesh1114@gmail.com">Email me</a></div></section>';
+document.querySelectorAll(".view").forEach(v=>{if(v.id!=="v-contact")v.insertAdjacentHTML("beforeend",CTA)});
+
+const views=["home","counselling","digital","social","blog","talk","contact"];
+const titles={home:"Talk to Mahesh",counselling:"Counselling",digital:"Digital presence",social:"Social",blog:"Blog",talk:"About",contact:"Contact"};
+function route(){
+  let h=location.hash.slice(1);if(!views.includes(h))h="home";
+  views.forEach(v=>$("v-"+v).hidden=v!==h);
+  document.querySelectorAll("nav a").forEach(a=>a.dataset.v===h?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"));
+  document.title=(h==="home"?"":titles[h]+" – ")+"Mahesh Sathe";
+  $("nav").classList.remove("open");$("menu").setAttribute("aria-expanded","false");window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);route();
+$("menu").onclick=()=>{const o=$("nav").classList.toggle("open");$("menu").setAttribute("aria-expanded",o)};
+document.addEventListener("click",e=>{const a=e.target.closest("[data-topic]");if(a)$("f-topic").value=a.dataset.topic});
+$("form").addEventListener("submit",e=>{
+  e.preventDefault();
+  const body="Name: "+$("f-name").value+"\nEmail: "+$("f-email").value+"\n\n"+$("f-msg").value;
+  location.href="mailto:k.sathemahesh1114@gmail.com?subject="+encodeURIComponent($("f-topic").value+" – "+$("f-name").value)+"&body="+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
